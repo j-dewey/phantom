@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/immacdonald/phantom.git"
+        "url": "git+https://github.com/j-dewey/phantom.git"
     },
     "keywords": [
         "react",
