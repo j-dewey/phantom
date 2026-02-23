@@ -23,7 +23,8 @@
         "format": "npm run lint && npm run stylelint && npm run prettier",
         "prepublishOnly": "npm run build",
         "release": "npm publish",
-        "release-alpha": "npm publish --tag alpha"
+        "release-alpha": "npm publish --tag alpha",
+        "prepare": "tsup"
     },
     "repository": {
         "type": "git",
