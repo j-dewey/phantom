@@ -10,7 +10,7 @@ export type Tab = {
     tab: ReactNode;
 
     /** The label displayed in the tab selection menu. */
-    label: string;
+    label: ReactNode;
 
     /** Disables the tab, preventing selection. */
     disabled?: boolean;
