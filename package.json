@@ -61,7 +61,8 @@
     },
     "dependencies": {
         "clsx": "^2.1.1",
-        "tsup": "6.7.0",
+        "tsup": "latest",
+        "@rollup/rollup-linux-x64-gnu": "latest",
         "react-select": "^5.8.2",
         "sass": "*"
     },
