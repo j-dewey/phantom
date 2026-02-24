@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npm install && npm tsup"
+        "prepare": "npx tsup ./src/index.ts --format esm --out-dir lib --dts"
     },
     "repository": {
         "type": "git",
