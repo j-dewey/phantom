@@ -21,8 +21,8 @@ export default defineConfig({
         './src/components/**/**/!(index).ts?(x)',
         './src/hooks/*.ts?(x)',
         './src/types/*.ts?(x)',
-        './src/utility/*.ts?(x)',
-        './src/styles/styles.scss'
+        './src/utility/*.ts?(x)'
+        //'./src/styles/styles.scss'
     ],
     format: ['esm'],
     outDir: 'lib/',
