@@ -6,7 +6,6 @@
 
 # Build files
 **/dist
-**/lib
 **/build
 
 # Additional
