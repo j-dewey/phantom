@@ -73,7 +73,7 @@ export default defineConfig({
                     to: ['./lib/styles/tokens/']
                 }
             ],
-            watch: true
+            watch: false
         })
     ]
 });
