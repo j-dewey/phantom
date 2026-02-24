@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npm install --ignore-scripts && tsup"
+        "prepare": "npm install && npm tsup"
     },
     "repository": {
         "type": "git",
@@ -57,11 +57,11 @@
         "sass": "^1.72.0",
         "sass-loader": "^14.1.1",
         "ts-node": "^10.9.2",
-        "tsup": "^8.0.2",
         "typescript": "^5.4.3"
     },
     "dependencies": {
         "clsx": "^2.1.1",
+        "tsup": "^8.0.2",
         "react-select": "^5.8.2"
     },
     "peerDependencies": {
