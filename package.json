@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npx esbuild ./src/index.ts --format=esm --outdir=lib --platform=browser && npx sass ./src/styles/styles.scss ./lib/styles/styles.css && mkdir -p ./lib/styles/tokens && cp -r ./src/styles/tokens/. ./lib/styles/tokens/"
+        "prepare": "npx esbuild ./src/index.ts --format=esm --outfile=lib/index.js --platform=browser --external:react --external:react-dom --external:react/jsx-runtime --external:react-router --external:react-router-dom && npx sass ./src/styles/styles.scss ./lib/styles/styles.css && mkdir -p ./lib/styles/tokens && cp -r ./src/styles/tokens/. ./lib/styles/tokens/"
     },
     "repository": {
         "type": "git",
