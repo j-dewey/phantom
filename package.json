@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npx tsup"
+        "prepare": "npx tsup && npx sass ./src/styles/styles.scss ./lib/styles/styles.css && mkdir -p ./lib/styles/tokens && cp -r ./src/styles/tokens/. ./lib/styles/tokens/"
     },
     "repository": {
         "type": "git",
