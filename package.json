@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npx esbuild ./src/index.ts --format=esm --outfile=lib/index.js --platform=browser --external:react --bundle --external:react-dom --external:react/jsx-runtime --external:react-router --external:react-router-dom && npx sass ./src/styles/styles.scss ./lib/styles/styles.css && mkdir -p ./lib/styles/tokens && cp -r ./src/styles/tokens/. ./lib/styles/tokens/"
+        "prepare": "npx tsup"
     },
     "repository": {
         "type": "git",
@@ -61,7 +61,7 @@
     },
     "dependencies": {
         "clsx": "^2.1.1",
-        "tsup": "^8.0.2",
+        "tsup": "6.7.0",
         "react-select": "^5.8.2",
         "sass": "*"
     },
