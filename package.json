@@ -24,7 +24,7 @@
         "prepublishOnly": "npm run build",
         "release": "npm publish",
         "release-alpha": "npm publish --tag alpha",
-        "prepare": "npx tsup ./src/index.ts --format esm --out-dir lib --dts"
+        "prepare": "npx esbuild ./src/index.ts --bundle=false --format=esm --outdir=lib --platform=browser"
     },
     "repository": {
         "type": "git",
